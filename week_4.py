@@ -3,7 +3,7 @@ from gym_super_mario_bros.actions import RIGHT_ONLY, SIMPLE_MOVEMENT, COMPLEX_MO
 from nes_py.wrappers import JoypadSpace
 
 env = gym_super_mario_bros.make('SuperMarioBros-1-1-v0')
-env = JoypadSpace(env, SIMPLE_MOVEMENT)
+env = JoypadSpace(env, COMPLEX_MOVEMENT)
 
 state = env.reset()
 done = False
