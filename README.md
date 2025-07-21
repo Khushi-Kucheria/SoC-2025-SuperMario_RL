@@ -8,11 +8,6 @@ This project was developed as part of the **SoC 2025** program and showcases how
 
 ---
 
-* `week_2.ipynb`: Implements Q-learning on the `Taxi-v3` environment.
-* `week_3.ipynb`: Sets up the Super Mario Bros environment with basic preprocessing and demonstrates an error encountered during initial PPO model training.
-* `week_4.ipynb`: Explores the Super Mario Bros environment and its observation space.
-* `week_5.ipynb`: Demonstrates training PPO agents for Super Mario Bros with different movement sets (simple and complex) and across different game levels.
-
 ## Week-by-Week Breakdown
 
 ### Week 2: Q-Learning with Taxi-v3
