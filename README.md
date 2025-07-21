@@ -47,7 +47,7 @@ The `week_4.py` provides a basic interaction with the Super Mario Bros environme
 
 ### Week 5: Training PPO Models for Super Mario Bros
 
-The `week_5.ipynb` notebook showcases successful training of PPO agents for Super Mario Bros using different movement sets and on a different level, building upon the environment setup.
+The `training.py` showcases successful training of PPO agents for Super Mario Bros using different movement sets and on a different level, building upon the environment setup.
 
 * **Environment Preparation**: Similar to Week 3, the environment is wrapped with `JoypadSpace`, `ResizeObservation` (to 84x84), `GrayScaleObservation` (keeping dimensions), `Monitor` (for logging stats), `DummyVecEnv`, and `VecFrameStack` (n\_stack=4).
 
@@ -56,5 +56,7 @@ The `week_5.ipynb` notebook showcases successful training of PPO agents for Supe
     * **Training Time**: The model is trained for 100,000 total timesteps.
     * **Performance**: During training, the agent shows increasing `ep_rew_mean` (mean episode reward) and `ep_len_mean` (mean episode length), indicating learning progress. The final reported mean episode reward is 552, and the mean episode length is approximately 16,200 timesteps.
     * **Saving**: The trained model is saved to `train/ppo_mario_simple/mario_model`.
+
+We evaluated the trained PPO model and visualized Mario’s behavior using `env.render()`. (`evaluate.py`)
 
 ---
